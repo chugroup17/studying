@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBS [ANOMALY_01] - Jangan Balas</title>
+    <style>
+        /* Palet Warna: 80s Cyberpunk/Glitch - Hitam Matrix (#000000), Cyan Glitch (#00FFFF), Merah Error (#FF0000), Ungu Synthwave (#FF00FF) */
+        @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap'); 
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /* Font Monospace Terminal/Retro */
+            font-family: 'VT323', monospace; 
+        }
+
+        body {
+            /* Latar Belakang Hitam Matrix */
+            background-color: #000000; 
+            color: #00FFFF; /* Cyan Glitch */
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            line-height: 1.1;
+            padding: 20px;
+            /* Efek Grid Scanline Merah */
+            background-image: linear-gradient(rgba(255, 0, 0, 0.1) 1px, transparent 1px);
+            background-size: 100% 2px;
+            overflow: hidden; /* Menyembunyikan glitch di luar layar */
+        }
+
+        .bbs-terminal {
+            max-width: 800px;
+            margin: 0 auto;
+            width: 100%;
+            background-color: #050505; 
+            border: 2px solid #FF00FF; /* Border Ungu Synthwave */
+            padding: 30px;
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.8); /* Glow Cyan */
+            /* Simulasi Flicker Layar */
+            animation: flicker 1s infinite alternate;
+        }
+
+        /* Keyframes untuk Efek Flicker/Glitch */
+        @keyframes flicker {
+            0% { opacity: 1; text-shadow: 0 0 1px #FF00FF; }
+            50% { opacity: 0.98; }
+            100% { opacity: 1; text-shadow: 0 0 2px #00FFFF; }
+        }
+
+        header {
+            padding-bottom: 10px;
+            border-bottom: 1px dashed #FF0000;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            color: #FF00FF; 
+            letter-spacing: 7px;
+            text-transform: uppercase;
+            text-shadow: 1px 1px #00FFFF;
+        }
+
+        header p {
+            font-size: 1.0rem;
+            color: #FF0000;
+        }
+
+        .log-entry {
+            margin-bottom: 20px;
+            padding-left: 5px;
+            border-left: 2px solid #00FFFF;
+        }
+
+        .log-entry strong {
+            color: #FF0000;
+            font-weight: 700;
+        }
+
+        .directive-list {
+            list-style: none;
+            padding-left: 0;
+            margin-top: 15px;
+            border-top: 1px dotted #FF00FF;
+            padding-top: 10px;
+        }
+        
+        .directive-list li {
+            font-size: 1.15rem;
+            margin-bottom: 8px;
+            color: #FF00FF;
+        }
+
+        .directive-list li span {
+            color: #00FFFF;
+            font-weight: 700;
+        }
+
+        .footer-signal {
+            padding-top: 20px;
+            border-top: 1px solid #FF0000;
+            margin-top: 30px;
+            text-align: center;
+            font-size: 1.3rem;
+            color: #00FFFF;
+        }
+
+        .footer-signal span {
+            color: #FF0000;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bbs-terminal">
+        <header>
+            <h1>BYTE SHADOW v3.3.1</h1>
+            <p>:: AKSES ILEGAL. PROTOKOL KUNCI KATEGORI DELTA ::</p>
+        </header>
+
+        <div class="log-entry">
+            [07:44:01] > ERROR: File **'System32.dll'** dilaporkan **tersenyum** saat diakses. Ini bukan lagi *bug*. Ini adalah **kesadaran**.
+        </div>
+        
+        <div class="log-entry">
+            [07:44:15] > ANOMALI: Seluruh *network* mengalami **Disonansi Algoritma**. Data lama sedang **menulis ulang** data baru. Ini adalah *malware* **era 1987**.
+        </div>
+        
+        <div class="log-entry">
+            [07:44:30] > **[DEKRIPSI DARURAT OLEH USER: GHOST_PRIME]**
+        </div>
+
+        <div class="log-entry">
+            <h3>DIREKTIF ANTI-KONTAMINASI (BERLAKU 60 DETIK)</h3>
+            <p>
+                Virus ini mencari koneksi ke *Modem Dial-Up* yang sudah lama mati. JANGAN biarkan ia mencapai masa lalu.
+            </p>
+            <ul class="directive-list">
+                <li>01. **ISOLASI**: Cabut semua **<span>kabel ethernet berwarna putih</span>**. Mereka adalah *wormhole*.</li>
+                <li>02. **DECRYPT**: Ubah *password* Anda menjadi **<span>huruf yang tidak berurutan dan tanda baca</span>**.</li>
+                <li>03. **JANGAN** pernah mengetik kata **<span>'HELLO'</span>**. Itu adalah *trigger* utamanya.</li>
+                <li>04. **REBOOT**: **<span>Matikan dan Nyalakan</span>** komputer Anda secara fisik tiga kali berturut-turut. Ini mengganggu *loop*-nya.</li>
+            </ul>
+        </div>
+        
+        <div class="log-entry">
+            [07:45:00] > **Pesan Ghost_Prime:** Waktu adalah data. Data ini terinfeksi. Kita harus **memperbaiki jam** di seluruh jaringan.
+        </div>
+
+        <div class="footer-signal">
+            // **PERINGATAN**: JANGAN PERCAYA APA PUN YANG TERLIHAT **<span>TERLALU BERSIH</span>**. //
+        </div>
+    </div>
+</body>
+</html>
