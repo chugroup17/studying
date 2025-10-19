@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Contoh Script Error HTML</title>
+</head>
+<body>
+  <h2>Demo Error Event Tombol</h2>
+  <p>Klik tombol di bawah untuk melihat error:</p>
+
+  <button onclick="jalankanFungsiYangTidakAda()">Klik Saya</button>
+
+  <p id="error" style="color:red; font-weight:bold; margin-top:10px;"></p>
+
+  <script>
+    window.onerror = function(message, source, lineno, colno, error) {
+      document.getElementById("error").innerText = 
+        "Terjadi error: " + message + " (Baris: " + lineno + ")";
+      console.error("Detail error:", error);
+      return true; // mencegah pesan default browser
+    };
+  </script>
+</body>
+</html>
